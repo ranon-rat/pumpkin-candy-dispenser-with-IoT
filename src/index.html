@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pumkin</title>
+  </head>
+  <style>
+    body {
+
+      background-color: #00140e;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+    }
+    #menu{
+        background-color: #00140e;
+        color: #fff;
+        padding: 10px;
+        margin:auto auto;
+        width:700px;
+    }
+    #menu button{
+        background-color: #00cc8f;
+        color: #fff;
+        border-radius: 10px;
+        border:none;
+        font-size: 20px;
+        padding: 10px;
+        margin:auto auto;
+        width:200px;
+    }
+    #menu button:hover{
+        background-color: #007753;
+    }
+  </style>
+  <body>
+    <div id="menu" align="center">
+        <h1>🎃Happy halloween 🎃</h1>
+      <img id="streaming" width="500" height="500" />
+     
+      <p>
+        <button id="button" onclick='fetch("/open")'>open</button>
+      </p>
+    </div>
+    <script>
+      const img = document.getElementById("streaming");
+      img.src = `http://${window.location.hostname}:81`;
+    </script>
+  </body>
+</html>
