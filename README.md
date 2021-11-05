@@ -1,4 +1,4 @@
-# pumkin candy dispenser 
+# pumpkin candy dispenser
 
 its a really simple candy dispenser that it works with a esp32 ai thinker.
 
